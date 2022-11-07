@@ -1,0 +1,43 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+    <!-- Hero section -->
+	{% include 'store/include/slider.html' %}
+	<!-- Hero section end -->
+
+    <!-- Features section -->
+    <!-- {% include 'store/include/features.html' %} -->
+	<!-- Features section end -->
+
+
+	<!-- letest product section -->
+		{% include 'store/include/new_products.html' %}
+	<!-- letest product section end -->
+
+
+
+	<!-- Product filter section -->
+	{% comment %}
+	{% include 'store/include/top_products.html' %}
+	<!-- Product filter section end -->
+	{% endcomment %}
+
+
+	<!-- All Product  section -->
+		{% include 'store/include/products.html' %}
+	<!-- All Product section end -->
+
+	<!-- Banner section -->
+	<!-- <section class="banner-section">
+		<div class="container">
+			<div class="banner set-bg" data-setbg="{% static 'img/banner-bg.jpg' %}">
+				<div class="tag-new">NEW</div>
+				<span>New Arrivals</span>
+				<h2>STRIPED SHIRTS</h2>
+				<a href="#" class="site-btn">SHOP NOW</a>
+			</div>
+		</div>
+	</section> -->
+	<!-- Banner section end  -->
+{% endblock %}
